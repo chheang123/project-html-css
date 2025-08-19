@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS</title>
+    
+    <style>
+        body
+
+        table,th, td {
+            border: 1px solid black;
+        }
+        
+        table,th, td {
+            border: 2px solid black;
+            border: -collapse  collapse
+        }
+
+        #chheang {
+            text-align: center;
+            color: red;
+        }
+
+        #koka{
+            text-align: center;
+            color: red;
+        }
+        #vovo {
+            background-color: #ee82ee;
+        }
+        #vivo {
+            background-color: green;
+        }
+        #bobo {
+            background-color: yellow;
+        }
+        p.dotted {border-style: dotted;}
+        p.dashed {border-style: dashed;}
+        p.solid  {border-style: solid ;}
+        p.groove {border-style: groove;}
+
+        p.one {
+            border-style: solid ;
+            border-color: red yellow blue palegreen;
+        }
+
+        p.go{
+            border-style: solid;
+            border-color: red;
+        }
+
+        p.to{
+            border-style: solid;
+            border-color: blue;
+        }
+        
+        p.love{
+            border-style: dotted;
+            border-color: black;
+        }
+        p.cat{
+            border: 10px solid red;
+        }
+        #rota{ 
+            height: 380px;
+            width: 80px;
+            background-color: powderblue;
+        }
+        #zono{
+            background-color: peachpuff;
+            width: 300px;
+            border: 15px solid green;
+            padding: 50px;
+            margin: 20px;
+        }
+        #HD1{
+            text-decoration-line:underline;
+            text-decoration-color:blue ;
+            text-decoration-thickness:5px ;
+            text-decoration-style:solid ;
+        }
+        #HD2{
+            text-decoration-line:underline ;
+            text-decoration-color: red;
+            text-decoration-thickness:5px ;
+            text-decoration-style: double;
+        }
+        #HD3{
+            text-decoration-line: underline;
+            text-decoration-color: fuchsia;
+            text-decoration-thickness: 3px;
+            text-decoration-style: dotted;
+        }
+        #mo{
+            text-shadow: 2px 2px red;
+        }
+        #za{
+            text-shadow: 2px 2px 5px yellow;
+        }
+        #mmo{
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; 
+            font-size: 40px;
+        }
+        #ol{
+            background: #ff9999;
+            padding: 20px;
+        }
+        #ol li{
+            background: #6a5acd;
+            color: white;
+            padding: 5px;
+            margin-left: 35px;
+        }
+        #ul{
+            background: purple;
+            padding: 20px;
+        }
+        #ul li{
+            background: black;
+            color: white;
+            margin: 5px;
+        }
+        #yes{
+            height: 70px;
+        }
+        #soda{
+            height: 70px;
+        }
+        #banana{
+            border-collapse: collapse;
+            width: 200px;
+        }
+        th, td{
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        #mengo:hover {
+            background-color: red;font-size: 30px;color: white;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .img-container{
+            border: 10px solid purple;
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+        div.background {
+            background: url(img/pasted\ file.png);
+            border: 2px solid black;
+        }
+        div.transbox {
+            margin: 50px;
+            background-color: #ffffff;
+            border: 1px solid black;
+            opacity: 0.6;
+        }
+        div.transbox p {
+            margin: 5%;
+            font-weight: bold;
+            color: #000000;
+        }
+        a[target="_blank"]{
+            background-color: yellow;
+        }
+        a[target="_top"] {
+            background-color: pink;
+        }
+        [title~="photo"] {
+            border: 10px solid blue;
+        }
+        input[type=text] {
+            width: 100%;
+            box-sizing: border-box;
+            border: 3px solid #3cb371;
+            border-radius: 90px;
+            font-size: 16px;
+            background-color: pink;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+        }
+        textarea {
+            width: 50%;
+            height: 150px;
+            padding: 12px 20px ;
+            box-sizing: border-box;
+            border: 2px solid #ee82ee;
+            border-radius: 20px;
+            background-color: #ccc;
+            font-size: 16px;
+            resize: none;
+        }
+
+        #select {
+            width: 100%;
+            padding: 10px;
+            border: 70px 20px;
+            border: none;
+            border-radius: 10px;
+            background-color: skyblue;
+        }
+        .button {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border: 3px solid red;
+        }
+        @media (prefers-reduced-motion: reduce) {
+            *{
+                animation: none !important;
+                transition: none !important;
+            }
+         }
+         #aa {
+            width: 100px;
+            padding: 50px;
+            background-color: blue;
+            position: relative;
+            animation-name: eaea;
+            animation-duration: 4s;
+           animation-iteration-count: infinite;
+         }
+
+         @keyframes eaea{
+            0% {background-color: blue; left: 0px; top: 0px;}
+            25% {background-color: yellow; left: 200px; top: 0px ;}
+            50% {background-color: red; left: 200px; top: 200px;}
+            75% {background-color: black; left: 0px; top: 200px;}
+            100% {background-color: blue; left: 0px; top: 0px;}
+         }
+         #roza1 {
+            border-radius: 25px;
+            background: yellowgreen;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+         }
+         #roza2 {
+            border-radius: 25px;
+            border: 2px solid #ff0000;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+         }
+         #roza3 {
+            border-radius: 25px;
+            background: url('../learn-first-html&css/img/pasted\ file.png');
+            background-position: left top;
+            background-repeat: repeat;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+
+         }
+         #mama {
+            border-radius:25px 50px;
+            background: #0000ff;
+            padding: 30px;
+            width: 200px;
+            height: 160px;
+         }
+         #vasan {
+            border-radius: 25px 50px 80px;
+            background: #0000ff;
+            padding: 30px;
+            width: 200px;
+            height: 160px;
+         }
+         #wena {
+            border: 15px solid ;
+            padding: 15px;
+            border-image: url('../border.png') 30 round;
+            
+         }
+         #tata {
+            border: 15px solid transparent;
+            padding: 15px;
+            border-image: url(../border.png) 30 stretch;  
+       }
+       #yaya {
+        background: url(../learn-first-html&css/img/Landscape.jpg);
+        padding: 200px;
+
+       }
+       #papa {
+        border: 1px solid black;
+        background: url(../learn-first-html&css/img/images.png);
+        background-size: 100px 80px;
+        background-repeat: no-repeat;
+        padding: 15px;
+       }
+
+     
+    </style>
+</head>
+
+<body>
+    <h1>1. HTML</h1>
+
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+
+    <h1>HTML</h1>
+    <p style="color: blue;">My name is Thon keo chheang .</p>
+
+    <h1>HTML Heading</h1>    
+    
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
+
+    <h1>HTML link</h1>
+    <a href="https://www.w3schools.com"> This is a link w3school</a><br>
+    <a href="https://www.youtube.com/"> This is a link youtub</a><br>
+    <a href="https://www.tiktok.com">  This is a link tiktok</a><br><br>
+    
+
+    <h1>HTML image</h1>
+    <img src="img/image.png" width="500" height="600"><br>
+    <img src="img/image copy.png" width="500" height="600">
+
+    <h1>This is a paragraph</h1>
+    <p style="color: brown;"> In the last month. I had a trip with foreign guests, and this trip made me feel happy and study new experiences.
+        I learned a lot of new things and practiced my English with foreign guests.
+        My English is not yet good, but I am still trying to improve it every day.Also,
+        this trip taught me how to lead others and lead myself.
+        I also introduced them ro the Cambodian way of life and introduced them to Khmer history,
+        such as taking them to the National Museum and Tuol Sleng Prison in Phnom Penh.
+    </p>
+    <p style="background-color: yellow;"> In the last  mont. I had trip with foreige guests, and this trip made me feel happy  and stdy new experiennces.
+        I learned a lot of new things and practiced my English with foreign guests.
+        My English is not yet good, but I am still trying to improve it every day. Also,
+        this trip taught me how to lead others and lead myself.
+        I also inntroduced them ro the Cambodian way of life and introduced them to Khmer history,
+        such as taking them to the  National Musem and Tuol sleng prison in Phonm Penh.
+    </p>
+    <h1>HTML Text Formatting</h1>
+
+    <p><b>This text is bold</b></p>
+    <p><i>This text is italic</i></p>
+    <p>This is <sub>subscript</sub> and <sup>supercript</sup></p>
+    <p><small>This is some smaller text.</small></p>
+    <p>Thon keo <mark>chheang</mark></p>
+    <p>I go to <del>school</del> at 7 am</p>
+
+
+    <h1 style="border: 2px solid yellow;">I eat like banana.</h1>
+    <h1 style="border: 2px solid red;">I go to school at 7 am.</h1>
+    <h1 style="border: 2px solid blue;">My name is Thon keo chheang.</h1>
+    <h1 style="border: 2px solid greenyellow;">I love my family.</h1>
+
+    <h1 style="background-color: rgb(60, 60, 60);">rgb(60, 60, 60)</h1>
+    <h1 style="background-color: rgb(100, 100, 100);">rgb(100, 100, 100)</h1>
+    <h1 style="background-color: rgb(140, 140, 140);">rgb(140, 140, 140)</h1>
+    <h1 style="background-color: rgb(180, 180, 180);">rgb(180, 180, 180)</h1>
+    <h1 style="background-color: rgb(200, 200, 200);">rgb(200, 200, 200)</h1>
+    <h1 style="background-color: rgb(240, 240, 240);">rgb(240, 240, 240)</h1> 
+
+    <p><a href="#C5">jum to chapter 5</a></p>
+    <p><a href="#C15">jum to chater 15</a></p>
+
+    <h2>Chapter 1</h2>
+    <p>I go to school at 7 am</p>
+
+    <h2>Chapter 2</h2>
+    <p>I go to school at 7 am</p>
+
+    <h2>Chapter 3</h2>
+    <p>I go to school at 7 am</p>
+
+    <h2>Chapter 4</h2>
+    <p>I go to school at 7 am</p>
+
+    <h2 id="C5">Chapter 5</h2>
+    <p>I go to school at 7 am</p>
+
+    <h2>Chaoter 6</h2>
+    <p>I go to school at 7 am</p>
+
+    <h2>Chaoter 7</h2>
+    <p>I go to school at 7 am</p>
+
+    <h2>Chaoter 8</h2>
+    <p>I go to school at 7 am</p>
+
+    <h2>Chaoter 9</h2>
+    <p>I go to school at 7 am</p>
+
+    <h2>Chaoter 10</h2>
+    <p>I go to school at 7 am</p>
+
+    <h2>Chaoter 11</h2>
+    <p>I go to school at 7 am</p>
+
+    <h2>Chaoter 12</h2>
+    <p>I go to school at 7 am</p>
+
+    <h2>Chaoter 13</h2>
+    <p>I go to school at 7 am</p>
+
+    <h2>Chaoter 14</h2>
+     <p>I go to school at 7 am</p>
+
+    <h2 id="C15">Chaoter 15</h2>
+    <p>I go to school at 7 am</p>
+
+    <h2>Chaoter 16</h2>
+    <p>I go to school at 7 am</p>
+
+    <h2>Chaoter 17</h2>
+    <p>I go to school at 7 am</p>
+
+    <h1>HTML Table</h1>
+
+    <table style="background-color: yellow;width: 100%;">
+        <tr>
+            <th id="yes">NAME</th>
+            <th id="yes">AGE</th>
+            <th id="yes">Gender</th>
+        </tr>
+        <tr>
+            <td>CHHEANG</td>
+            <td>19</td>
+            <td>M</td>
+        </tr>
+            <tr>
+                <td>LILI</td>
+                <td>18</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>LISA</td>
+                <td>2</td>
+                <td>F</td>
+            </tr>
+    </table>
+    <br>
+
+    <table style="background-color: pink; width: 100%;">
+        <tr>
+            <th id="soda" colspan="2">NAME</th>
+            <th id="soda">AGE</th>
+        </tr>
+        <tr>
+            <td>KOKA</td>
+            <td>LANA</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>VI</td>
+            <td>DALI</td>
+            <td>19</td>
+        </tr>
+    </table>
+
+
+
+    <h1>2. CSS</h1>
+    
+    <p id="chheang">What time do you go to school?</p>
+    <p id="chheang">at 7 am</p>
+    <p id="chheang">at 8 am</p><br>
+
+    <h1 id="koka">Hello World!</h1>
+    <h2 id="koka">Hello CSS!</h2>
+    <p id="koka">This is a paragraph</p><br>
+
+
+    <h2 style="background-color: #ff0000;">#ff0000</h2>
+    <h2 style="background-color: #0000ff;">#0000ff</h2>
+    <h2 style="background-color: #3cb371;">#3cb371</h2>
+    <h2 style="background-color: #ee82ee;">#ee82ee</h2>
+    <h2 style="background-color: #ffa500;">#ffa500</h2>
+    <h2 style="background-color: #6a5acd;">#6a5acd</h2><br>
+
+    <h1 id="vovo">CSS background-color example!</h1>
+    <div id="vivo">
+        This is a CSS.
+        <p id="bobo">This is a paragraph.</p>
+        This is a CSS.
+    </div>
+
+    <div>Hello chheang.
+        <p>hello koka</p>
+    </div><br>
+
+    <h2>CSS Borders</h2>
+
+    <p class="dotted">Thon keo chheang</p>
+    <p class="dashed">Lina koka</p>
+    <p class="solid">BoBo tota</p>
+    <p class="groove">Neath lili</p><br>
+
+    <p class="one">I go to school at 7 am and i go back home at 11 am</p><br>
+
+    <p class="go">A solid red</p>
+    <p class="to">A soild green</p>
+    <p class="love">A dotted blue border</p><br>
+    
+    <p class="cat">This is a css border and color red.</p><br>
+
+    <div id="rota">My name is <br> Thon keo chheang. <br>
+       am 19 yeres old . <br> I am from Kandal Krom Village,<br> Banteay Dek Commune,<br> Kien Svay District, Kandal Province.</div><br>
+
+    <h2>Traveling</h2>
+    
+    <div id="zono">In the last month. I had a trip with foreign guests, and this trip made me feel happy and study new experiences.
+        I learned a lot of new things and practiced my English with foreign guests.
+        My English is not yet good, but I am still trying to improve it every day.Also,
+        this trip taught me how to lead others and lead myself.
+        I also introduced them ro the Cambodian way of life and introduced them to Khmer history,
+        such as taking them to the National Museum and Tuol Sleng Prison in Phnom Penh.
+    </div>
+
+    <h1 id="HD1">Heading 1</h1>
+    <h2 id="HD2">Heading 2</h2>
+    <h3 id="HD3">Heading 3</h3><br>
+
+    <h1 id="mo">Text-shadow effect!</h1>
+    <h2 id="mo">Name, Lina. jen. bobo. tino. koka. zara. dara</h2><br>
+
+    <h1 id="za">Thon keo chheang</h1>
+    <h1 id="mmo">CHHEANG 02.04.2006</h1><br>
+
+    <h1>Stying lists with Color</h1>
+    <ol id="ol">
+        <li>Coffee</li>
+        <li>Coca Cola</li>
+        <li>banana</li>
+        <li>apple</li>
+        <li>mengo</li>
+    </ol>
+    <ul id="ul">
+        <li>Coffee</li>
+        <li>Coco Cola</li>
+        <li>banana</li>
+        <li>apple</li>
+        <li>mengo</li>
+    </ul><br>
+
+    <h2>Hoverable Table</h2>
+    <table id="banana">
+        <tr id="mengo">
+            <th>NAME</th>
+            <th>PRICE</th>
+        </tr>
+        <tr id="mengo">
+            <td>banana</td>
+            <td>2$</td>
+        </tr>
+        <tr id="mengo">
+            <td>apple</td>
+            <td>4$</td>
+        </tr>
+        <tr  id="mengo" >
+            <td>Papaya</td>
+            <td>3$</td>
+        </tr>
+        <tr id="mengo">
+            <td>MENGO</td>
+            <td>2$</td>
+        </tr>
+    </table><br>
+
+    <div class="clearfix">
+        <div class="img-container"><img src="img/pasted file.png" alt="Italy" style="width: 100%;"></div>
+        <div class="img-container"><img src="img/pasted file.png" alt="Forest" style="width: 100%;"></div>
+        <div class="img-container"><img src="img/pasted file.png" alt="Mountains" style="width: 100%;"></div>
+    </div><br><br><br><br>
+    <br><br><br><br><br><br>
+
+    <div class="background">
+        <div class="transbox"><p>My name is Thon keo chheang</p></div>
+    </div>
+    <br>
+
+
+    <a href="https://www.w3schools.com">w3school.com</a>
+    <a href="https://www.youtube.com/"target="_blank">youtube.com</a>
+    <a href="https://github.com/"target="_top">github.com</a><br><br>
+
+    <img src="img/image copy.png" title="photo" width="150"heading="113"><br><br>
+
+    <h2>button search</h2>
+    <form>
+        <input type="text" name="search" placeholder="Search..">
+        
+    </form>
+    <br>
+    
+
+    <form>
+        <textarea>Some text...</textarea>
+    </form><br>
+    <h2>button select</h2>
+    <form>
+        <select id="select"name="people name">
+            <option value="ch">keo chheang</option>
+            <option value="ko">kokalare</option>
+            <option value="li">lila</option>
+            <option value="bo">bonazasa</option>
+        </select>
+
+    </form><br>
+
+
+    <p>button: <a class="button" href="https://www.w3schools.com">w3school</a></p><br>
+    <p>button: <a class="button" href="https://github.com/">github</a></p><br>
+    <p>button: <a class="button" href="https://www.canva.com/">canva</a></p><br>
+
+    <h2>CSS Accessibility Styling</h2>
+    
+    <div id="aa"></div>
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <h2>Rounded corners for an element with a background color:</h2>
+    <p id="roza1">Rounded corners!</p>
+
+    <h2>Rounded corners for an element with a border:</h2>
+    <p id="roza2">Rounded corners!</p>
+
+    <h2>Rounded corners for an element with a background image:</h2>
+    <p id="roza3">Rounded corners!</p><br>
+
+    <h2>border-radius. 25px 50px</h2>
+    <p id="mama"></p>
+
+    <h2>border-radius. 25px 50px 80px</h2>
+    <p id="vasan"></p><br>
+    
+    <p id="wena">This is a border.</p><br>
+
+    <p id="tata">border-image:url(borer.png)30 strech;</p><br>
+
+    <div id="yaya">
+        <h1>What is your name?</h1>
+        My name is Thon keo chheang. am 19 yeres old.
+    </div><br>
+    <div id="papa">
+        <h1>This is a picture of the countryside.</h1>
+        <p>It's so beautiful, even though it's just a picture. <br>
+            And it made me happy when I saw this picture.</p>                      
+    </div>
+	 
+    
+</body>
+</html>
