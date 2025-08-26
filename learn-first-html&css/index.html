@@ -514,6 +514,22 @@
       #di11 {animation: mymove 5s ease-in forwards;}
       #di12 {animation: mymove 5s ease-out forwards;}
       #di13 {animation: mymove 5s ease-in-out forwards;}
+
+      #hichheang{
+        border: 5px solid black;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: banana;
+        animation-duration: 2s;
+      }
+      @keyframes banana{
+        from {background-color: red;}
+        to {background-color: yellow ;}
+        to {background-color: black;}
+        to {background-color: #0000ff;}
+        to {background-color: purple;}
+      }
       
 
       @keyframes mymove{
@@ -569,6 +585,40 @@
 
       .papa4:hover {background-color: #ff00dd;}
 
+      .pagination  {
+        display: inline-block;
+      }
+      .pagination a {
+        border: 2px solid black;
+        font-size: 50px;
+        color: #000000;
+        float: left;
+        padding: 1px 16px;
+        text-emphasis: none;
+
+      }
+      .pagination a.chheang{
+        background-color: yellow;
+        color: black;
+      }
+      .pagination
+      a:hover:not(.chheang)
+      {background-color: red;}
+      #sara{
+        border: 4px solid rgb(250, 114, 220);
+        border-radius: 20px;
+        background-color: mediumspringgreen;
+      }
+        
+      
+      .pagoda {
+        background-color: rgb(255, 0, 140); 
+        color: white;
+        column-count: 3;
+        column-rule-style: solid;
+        column-rule-color:black;
+      } 
+      
 
 
     </style>
@@ -1033,6 +1083,10 @@
     <div id="di13">ease-in-out</div>
     <br>
 
+    <div id="hichheang"></div>
+    <p><b>width:100pxb</b> height:100px background-color: red and yellow and black</p>
+
+
     <h1>Button</h1>
     <button class="button button1">10px</button>
     <button class="button button2">14px</button>
@@ -1045,8 +1099,27 @@
     <button class="papa papa3">40px</button>
     <button class="papa papa4">50px</button><br>
 
-    
+    <h1>Pagination</h1>
+    <div class="pagination">
+      <a href="#">&laquo;</a>
+      <a href="#">1</a>
+      <a class="chheang" href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">&raquo;</a>
+    </div>
 
+    <h1 id="sara">CSS Multiple Columns</h1>
+    <div class="pagoda">In the last month. I had a trip with foreign guests, and this trip made me
+      feel happy and study new experiences. I learned a lot of new things and
+      practiced my English with foreign guests. My English is not yet good, but
+      I am still trying to improve it every day.Also, this trip taught me how to
+      lead others and lead myself. I also introduced them ro the Cambodian way
+      of life and introduced them to Khmer history, such as taking them to the
+      National Museum and Tuol Sleng Prison in Phnom Penh.</div><br>
+
+      
 
  </body>
 </html>
