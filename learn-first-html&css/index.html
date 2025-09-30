@@ -4,683 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML and CSS</title>
-
-    <style>
-      body table,
-      th,
-      td {
-        border: 1px solid black;
-      }
-
-      table,
-      th,
-      td {
-        border: 2px solid black;
-        border: -collapse collapse;
-      }
-
-      #chheang {
-        text-align: center;
-        color: red;
-      }
-
-      #koka {
-        text-align: center;
-        color: red;
-      }
-      #vovo {
-        background-color: #ee82ee;
-      }
-      #vivo {
-        background-color: green;
-      }
-      #bobo {
-        background-color: yellow;
-      }
-      p.dotted {
-        border-style: dotted;
-      }
-      p.dashed {
-        border-style: dashed;
-      }
-      p.solid {
-        border-style: solid;
-      }
-      p.groove {
-        border-style: groove;
-      }
-
-      p.one {
-        border-style: solid;
-        border-color: red yellow blue palegreen;
-      }
-
-      p.go {
-        border-style: solid;
-        border-color: red;
-      }
-
-      p.to {
-        border-style: solid;
-        border-color: blue;
-      }
-
-      p.love {
-        border-style: dotted;
-        border-color: black;
-      }
-      p.cat {
-        border: 10px solid red;
-      }
-      #rota {
-        height: 380px;
-        width: 80px;
-        background-color: powderblue;
-      }
-      #zono {
-        background-color: peachpuff;
-        width: 300px;
-        border: 15px solid green;
-        padding: 50px;
-        margin: 20px;
-      }
-      #HD1 {
-        text-decoration-line: underline;
-        text-decoration-color: blue;
-        text-decoration-thickness: 5px;
-        text-decoration-style: solid;
-      }
-      #HD2 {
-        text-decoration-line: underline;
-        text-decoration-color: red;
-        text-decoration-thickness: 5px;
-        text-decoration-style: double;
-      }
-      #HD3 {
-        text-decoration-line: underline;
-        text-decoration-color: fuchsia;
-        text-decoration-thickness: 3px;
-        text-decoration-style: dotted;
-      }
-      #mo {
-        text-shadow: 2px 2px red;
-      }
-      #za {
-        text-shadow: 2px 2px 5px yellow;
-      }
-      #mmo {
-        color: white;
-        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-        font-size: 40px;
-      }
-      #ol {
-        background: #ff9999;
-        padding: 20px;
-      }
-      #ol li {
-        background: #6a5acd;
-        color: white;
-        padding: 5px;
-        margin-left: 35px;
-      }
-      #ul {
-        background: purple;
-        padding: 20px;
-      }
-      #ul li {
-        background: black;
-        color: white;
-        margin: 5px;
-      }
-      #yes {
-        height: 70px;
-      }
-      #soda {
-        height: 70px;
-      }
-      #banana {
-        border-collapse: collapse;
-        width: 200px;
-      }
-      th,
-      td {
-        padding: 8px;
-        text-align: left;
-        border-bottom: 1px solid #ddd;
-      }
-      #mengo:hover {
-        background-color: red;
-        font-size: 30px;
-        color: white;
-      }
-      * {
-        box-sizing: border-box;
-      }
-      .img-container {
-        border: 4px solid red;
-        float: left;
-        width: 33.33%;
-        padding: 5px;
-      }
-
-      div.background {
-        background: url(img/pasted\ file.png);
-        background-repeat: no-repeat;
-        width: 600px;
-        border: 2px solid black;
-      }
-      div.transbox {
-        margin: 50px;
-        background-color: #ffffff;
-        border: 1px solid black;
-        opacity: 0.6;
-      }
-      div.transbox p {
-        margin: 5%;
-        font-weight: bold;
-        color: #000000;
-      }
-      a[target="_blank"] {
-        background-color: yellow;
-      }
-      a[target="_top"] {
-        background-color: pink;
-      }
-      [title~="photo"] {
-        border: 10px solid blue;
-      }
-      input[type="text"] {
-        width: 100%;
-        box-sizing: border-box;
-        border: 3px solid #3cb371;
-        border-radius: 90px;
-        font-size: 16px;
-        background-color: pink;
-        background-position: 10px 10px;
-        background-repeat: no-repeat;
-        padding: 12px 20px 12px 40px;
-      }
-      textarea {
-        width: 50%;
-        height: 150px;
-        padding: 12px 20px;
-        box-sizing: border-box;
-        border: 2px solid #ee82ee;
-        border-radius: 20px;
-        background-color: #ccc;
-        font-size: 16px;
-        resize: none;
-      }
-
-      #select {
-        width: 100%;
-        padding: 10px;
-        border: 70px 20px;
-        border: none;
-        border-radius: 10px;
-        background-color: skyblue;
-      }
-      .bu {
-        background-color: black;
-        color: white;
-        padding: 10px;
-        border: 3px solid red;
-      }
-      @media (prefers-reduced-motion: reduce) {
-        * {
-          animation: none !important;
-          transition: none !important;
-        }
-      }
-      #aa {
-        width: 100px;
-        padding: 50px;
-        background-color: blue;
-        position: relative;
-        animation-name: eaea;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
-      }
-
-      @keyframes eaea {
-        0% {
-          background-color: blue;
-          left: 0px;
-          top: 0px;
-        }
-        25% {
-          background-color: yellow;
-          left: 200px;
-          top: 0px;
-        }
-        50% {
-          background-color: red;
-          left: 200px;
-          top: 200px;
-        }
-        75% {
-          background-color: black;
-          left: 0px;
-          top: 200px;
-        }
-        100% {
-          background-color: blue;
-          left: 0px;
-          top: 0px;
-        }
-      }
-      #roza1 {
-        border-radius: 25px;
-        background: yellowgreen;
-        padding: 20px;
-        width: 200px;
-        height: 150px;
-      }
-      #roza2 {
-        border-radius: 25px;
-        border: 2px solid #ff0000;
-        padding: 20px;
-        width: 200px;
-        height: 150px;
-      }
-      #roza3 {
-        border-radius: 25px;
-        background: url("../learn-first-html&css/img/pasted\ file.png");
-        background-position: left top;
-        background-repeat: repeat;
-        padding: 20px;
-        width: 200px;
-        height: 150px;
-      }
-      #mama {
-        border-radius: 25px 50px;
-        background: #0000ff;
-        padding: 30px;
-        width: 200px;
-        height: 160px;
-      }
-      #vasan {
-        border-radius: 25px 50px 80px;
-        background: #0000ff;
-        padding: 30px;
-        width: 200px;
-        height: 160px;
-      }
-      #wena {
-        border: 15px solid;
-        padding: 15px;
-        border-image: url("../border.png") 30 round;
-      }
-      #tata {
-        border: 15px solid transparent;
-        padding: 15px;
-        border-image: url(../border.png) 30 stretch;
-      }
-      #yaya {
-        background: url(../images.jpg);
-        background-repeat: no-repeat;
-        padding: 50px;
-      }
-      #ka2 {
-        background: url(../Flowers.jpg);
-        background-repeat: no-repeat;
-        padding: 150px;
-        color: #ff004c;
-      }
-      #papa {
-        box-shadow: 0px 0px 100px red;
-        border: 5px solid yellow;
-        background: url(../learn-first-html&css/img/images.png);
-        background-size: 120px 100px;
-        background-repeat: no-repeat;
-        padding: 15px;
-      }
-      #liya {
-        height: 100px;
-        background-color: red;
-        background-image: repeating-linear-gradient(
-          30deg,
-          rgb(255, 1, 213),
-          yellow 10%,
-          rgb(73, 3, 67) 20%
-        );
-      }
-      #hi {
-        border: 4px solid rgb(0, 0, 0);
-        border-radius: 25px;
-        width: 200px;
-        padding: 15px;
-        color: white;
-        box-shadow: 5px 5px red, 10px 10px rgb(0, 255, 170);
-        background-color: rgb(0, 255, 170);
-        background-image: repeating-linear-gradient(
-          5deg,
-          rgb(17, 0, 255),
-          rgb(255, 0, 179) 10%,
-          rgb(30, 255, 0)
-        );
-      }
-      #kaka {
-        height: 100px;
-        background-color: rgb(255, 0, 0);
-        background-image: linear-gradient(
-          to right,
-          rgb(255, 0, 0),
-          rgb(0, 4, 255)
-        );
-      }
-      #oo {
-        height: 150px;
-        width: 200px;
-        background-color: red;
-        background-image: radial-gradient(
-          circle,
-          red,
-          yellow,
-          rgb(13, 16, 170)
-        );
-      }
-      #five-colors {
-        height: 200px;
-        width: 200px;
-        background-color: red;
-        background-image: conic-gradient(
-          rgb(255, 0, 0),
-          blue,
-          rgb(2, 255, 2),
-          rgb(255, 0, 157),
-          rgb(0, 255, 170)
-        );
-        border-radius: 100px;
-      }
-      #shadow {
-        color: #ff0000;
-        text-shadow: 6px 3px rgb(17, 0, 255);
-        font-size: 70px;
-      }
-      #vivi {
-        margin: 50px;
-        width: 200px;
-        height: 100px;
-        padding: 15px;
-        background-color: black;
-        color: white;
-        box-shadow: 10px 10px blue, 20px 20px red;
-        font-size: 20px;
-        border-radius: 10px;
-      }
-
-      .shadow {
-        margin: 50px;
-        padding: 30px;
-        background-color: #0000ff;
-        color: wheat;
-        box-shadow: -10px -10px  rgb(255, 0, 212);
-      }
-      .cards {
-        width: 250px;
-        box-shadow: 0 100px 100px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
-        text-align: center;
-      }
-      .hi {
-        background-color: #000000;
-        color: white;
-        padding: 10px;
-        font-size: 40px;
-      }
-      .holle{
-        padding: 15px;
-        
-      }
-      #loma {
-        width: 300px;
-        height: 100px;
-        background-color: yellow;
-        border: 2px solid black;
-      }
-      #milo {
-        width: 300px;
-        height: 100px;
-        background-color: palegreen;
-        border: 2px solid black;
-        transform: rotate(20deg);
-      }
-      #tifa {
-        width: 100px;
-        height: 100px;
-        background: rgb(0, 255, 170);
-        transition: width 2s;
-
-
-      }
-      #tifa :hover{
-        width: 300px;
-      }
-      #di9 {
-       width: 100px;
-       height: 50px;
-       border: 5px solid black;
-       background-color: yellow;
-       font-weight: bold;
-       position: relative;
-       animation: mymove 5s;
-       animation-fill-mode: forwards;
-       
-      }
-      #di10 {
-       width: 100px;
-       height: 50px;
-       border: 5px solid black;
-       background-color: red;
-       font-weight: bold;
-       position: relative;
-       animation: mymove 5s;
-       animation-fill-mode: forwards;
-      }
-      #di11 {
-       width: 100px;
-       height: 50px;
-       border: 5px solid black;
-       background-color: blue;
-       font-weight: bold;
-       position: relative;
-       animation: mymove 5s;
-       animation-fill-mode: forwards;
-      }
-      #di12 {
-       width: 100px;
-       height: 50px;
-       border: 5px solid black;
-       background-color:brown;
-       font-weight: bold;
-       position: relative;
-       animation: mymove 5s;
-       animation-fill-mode: forwards;
-      }
-      #di13 {
-        width: 100px;
-        height: 50px;
-        border: 5px solid black;
-        background-color: pink;
-        font-weight: bold;
-        position: relative;
-        animation: mymove 5s;
-        animation-fill-mode: forwards;
-      }
-      
-
-      #di9  {animation: mymove 5s linear forwards;}
-      #di10 {animation: mymove 5s ease forwards;}
-      #di11 {animation: mymove 5s ease-in forwards;}
-      #di12 {animation: mymove 5s ease-out forwards;}
-      #di13 {animation: mymove 5s ease-in-out forwards;}
-
-      #hichheang{
-        border: 5px solid black;
-        width: 100px;
-        height: 100px;
-        background-color: red;
-        animation-name: banana;
-        animation-duration: 2s;
-      }
-      @keyframes banana{
-        from {background-color: red;}
-        to {background-color: yellow ;}
-        to {background-color: black;}
-        to {background-color: #0000ff;}
-        to {background-color: purple;}
-      }
-      
-
-      @keyframes mymove{
-        from {left: 0px;}
-        to {left: 500px;}
-      }
-      .button {
-        background-color: #ff004c;
-        border: #ff0000;
-        color: white;
-        padding: 15px 33px;
-        text-align: center;
-        display: inline-block;
-        margin: 10px 5px;
-        
-      }
-      .button1 {font-size: 10px;}
-      .button2 {font-size: 14px;}
-      .button3 {font-size: 18px;}
-      .button4 {font-size: 22px;}
-      .button5 {font-size: 26px;} 
-
-      .papa {
-        background-color: #00ffea;
-        color: rgb(3, 2, 2);
-        font-size: 20px;
-        padding: 30px;
-        text-align: center;
-        margin: 10px;
-      }
-      .papa1 {border-radius: 20px;}
-      .papa2{border-radius: 30px;}
-      .papa3 {border-radius: 40px;}
-      .papa4 {border-radius: 50px;}
-
-      .papa1:not(:last-child)
-      {border-radius: none;}
-
-      .papa1:hover {background-color: #ff0000;}
-
-      .papa2:not(:last-child)
-      {border-radius: none;}
-
-      .papa2:hover {background-color: #fbff00;}
-      
-       .papa3:not(:last-child)
-      {border-radius: none;}
-
-      .papa3:hover {background-color: #3700ff;}
-
-      .papa4:not(:last-child)
-      {border-radius: none;}
-
-      .papa4:hover {background-color: #ff00dd;}
-
-      .pagination  {
-        display: inline-block;
-      }
-      .pagination a {
-        border: 2px solid black;
-        font-size: 50px;
-        color: #000000;
-        float: left;
-        padding: 1px 16px;
-        text-emphasis: none;
-
-      }
-      .pagination a.chheang{
-        background-color: yellow;
-        color: black;
-      }
-      .pagination
-      a:hover:not(.chheang)
-      {background-color: red;}
-      #sara{
-        border: 4px solid rgb(250, 114, 220);
-        border-radius: 20px;
-        background-color: mediumspringgreen;
-      }
-        
-      
-      .pagoda {
-        background-color:black; 
-        color: white;
-        column-count: 3;
-        column-rule-style: solid;
-        column-rule-color:yellow;
-      } 
-      .run{
-        margin: 20px;
-        width: 300px;
-        border: 4px solid red;
-        outline: 6px dashed blueviolet;
-        outline-offset: 10px;
-        
-      }
-      .papalala{
-        border: 2px solid red ;
-        width: 200px;
-        height: 100px; 
-        background-image:url(../img_5terre.jpg)
-      }
-      .papalaya{
-        border: 2px solid rgb(0, 0, 0);
-        width: 250px;
-        height:100px ;
-        background-image: url(../learn-first-html&css/img/logotiktok.png);
-        background-color: yellow;
-        padding: 20px;
-        
-      }
-      .flex-container1 {
-        display: flex;
-        background-color: dodgerblue;
-      }
-      .flex-container1 div  {
-        background-color: #f1f1f1;
-        margin: 10px;
-        padding: 20px;
-        font-size: 30px;
-      }
-      .flex-container {
-        display: flex;
-        align-items: stretch;
-        background-color: #ddd;
-      }
-      .flex-container >div {
-        background-color: black;
-        color: white;
-        margin: 10px;
-        text-align: center;
-        line-height:100px;
-        font-size: 30px;
-      }
-      .flex-container2 {
-        display: flex;
-        height: 200px;
-        align-items: stretch;
-        background-color: #ee82ee;
-      }
-      .flex-container2 div {
-        background-color: #fbff00;
-        color: black;
-        width: 100px;
-        margin: 10px;
-        text-align: center;
-        line-height: 80px;
-        font-size: 30px;
-      }
-    
-    </style>
+    <link rel="stylesheet" href="index.css">
+   
   </head>
 
   <body>
@@ -1216,12 +541,73 @@
       <div>11</div>
     </div><br>
 
-    <div>
+    <div class="container">
       <div>1</div>
       <div>2</div>
       <div>3</div>
       <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
     </div>
+    <br>
+
+    <h2>A Five Items Grid Layout</h2>
+    <div class="grid-container">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+      <div class="item4">4</div>
+      <div class="item5">5</div>
+    </div>
+    <br>
+    <div class="grid-container1">
+      <div class="go1">1</div>
+      <div class="go2">2</div>
+      <div class="go3">3</div>
+      <div class="go4">4</div>
+      <div class="go5">5</div>
+      <div class="go6">6</div>
+      <div class="go7">7</div>
+      <div class="go8">8</div>
+    </div>
+    <br>
+
+    
+
+    <h1 id="shadow">The column-gap Property</h1>
+
+    <div class="ctn">
+      <div class="sh">1</div>
+      <div class="sh">2</div>
+      <div class="sh">3</div>
+      <div class="sh">4</div>
+      <div class="sh">5</div>
+      <div class="sh">6</div>
+      <div class="sh">7</div>
+      <div class="sh">8</div>
+      
+    </div>
+    <br>
+
+    <h1>Badges</h1>
+
+
+    <h2>Example heading <span class="badge">NEW</span></h2>
+    <h3>Example heading <span class="badge">NEW</span></h3>
+    <h4>Example heading <span class="badge">NEW</span></h4>
+    <h5>Example heading <span class="badge">NEW</span></h5>
+    <br>
+    <h1 class="fafa">KHMER FONT </h1>
+
+
+
+   <button>click</button>
+    <script  src="learn-first-html&css/index.js"></script>
 
  </body>
 </html>
