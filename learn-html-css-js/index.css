@@ -1,13 +1,16 @@
-body{
-    background: brown;
-    color: white;
+body {
+  .heading {
+    transition: opacity 0.8s ease; /* effect ចេញចូលយឺតៗ */
+    opacity: 4;
+  }
+  .hide {
+    opacity: 0; /* ពេលលាក់ */
+  }
 }
-#demo{
-    border: 1px solid black;
-    width: 70%;
-    font-size: 30px;
-    background: black;   
+.btn {
+  background: yellow;
+  padding: 5px;
+  box-shadow: 0px 1px 3px 1px white;
+  border-radius: 10px;
 }
-#mean{
-    color: white;
-}
+
