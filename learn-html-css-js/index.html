@@ -1,47 +1,55 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>learn-js</title>
+    <title>Superheroes API</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <h1>My Firs JavaScript</h1>
-    <button
-      type="button"
-      onclick="document.getElementById('demo').innerHTML = Date()"
-    >
-      My. Time
-    </button>
-    <p id="demo"></p>
-
-    <h2>What Can JavaScript Do?</h2>
-    <p id="name1">What is youer name?</p>
-
-    <button
-      type="button"
-      onclick='document.getElementById("name").innerHTML ="My name is Thon keo chheang"'>button</button>
-      
     
-    <br /><br />
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JS</li>
-    </ul> <br>
+
+    <div class="chheang">
+      <h1 class="my">My Firs JavaScript</h1>
+      <h1>1 TO 10</h1>
+
+      <div class="display" id="number">1</div>
+
+      <button class="btn" onclick="nextNumber()">ចុចដើម្បីបន្ត</button>
+      <button class="btn btn-reset" onclick="reset()">ចាប់ផ្ដើមឡើងវិញ</button>
+
+
+      <img id="finishImg" 
+      src="./img/fuckyou.avif" 
+      alt=""
+      style="display:none;">
+
+      <div class="info">
+        <p>ចុច​ button ដើម្បីរាប់លេខ</p>
+      </div>
+    </div>
+     
     
-    <h1 class="heading">KEO.CHHEANG</h1>
-    <button class="btn">Show & Hide</button>
-
-    <button id="button_A">Press me</button>
-    <h3 id="heading_A"></h3>
-
-   
-   
-    <script src="learn.js">
-      
-    </script>
   </body>
+  <script src="script.js"></script>
+  <script>
+    let currentNumber = 1;
+    function nextNumber(){
+      if (currentNumber < 10){
+        currentNumber++;
+        document.getElementById('number').textContent = currentNumber;
+      }else{
+        
+
+        document.getElementById("finishImg").style.display = "block";
+      }
+    }
+    function reset(){
+      currentNumber = 1;
+      document.getElementById('number').textContent = currentNumber;
+      // លាក់រូបវិញ
+    document.getElementById("finishImg").style.display = "none";
+    }
+  </script>
+  
 </html>

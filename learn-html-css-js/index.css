@@ -1,16 +1,39 @@
-body {
-  .heading {
-    transition: opacity 0.8s ease; /* effect ចេញចូលយឺតៗ */
-    opacity: 4;
-  }
-  .hide {
-    opacity: 0; /* ពេលលាក់ */
-  }
+body{
+  text-align: center;
+  margin: auto;
 }
-.btn {
-  background: yellow;
-  padding: 5px;
-  box-shadow: 0px 1px 3px 1px white;
+.my{
+  font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.chheang{
+  margin-bottom: 20px;
+  color: white;
+}
+.chheang{
+  background: rgb(189, 14, 78);
+ 
+  
+}
+.display{
+  font-size: 40px;
+  color: rgb(234, 255, 0);
+}
+.btn{
+  background: rgb(255, 255, 255);
   border-radius: 10px;
+  padding: 5px;
 }
-
+.btn:hover{
+  background: yellow;
+}
+.info{
+  background: rgb(50, 214, 214);
+  color: black;
+}
+#finishImg {
+  width: 300px;
+  display: block;
+  border-radius: 20px;
+  margin: 20px auto;
+}
